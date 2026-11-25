@@ -1,0 +1,15 @@
+[
+  {
+    "nome": "lote_001_baking_soda",
+    "viral": "virais/viral_ref_01.mp4",
+    "qtd": 1,
+    "opcoes": {
+      "formato": "aplicando_bicarbonato_na_coxa",
+      "troca": "",
+      "falas": "",
+      "angulo": true,
+      "base": null,
+      "so_frame1": false
+    }
+  }
+]

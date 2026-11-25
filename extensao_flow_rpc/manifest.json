@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Flow Turbo RPC · 001 (Mac & Windows)",
+  "version": "2.0.0",
+  "description": "Injeta trap-main.js (reCAPTCHA Enterprise original) e flow-core.js no Google Flow para geração em alta concorrência.",
+  "minimum_chrome_version": "116",
+  "content_scripts": [
+    {
+      "js": [
+        "trap-main.js"
+      ],
+      "matches": [
+        "https://flow.google.com/*",
+        "https://labs.google/*"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "js": [
+        "flow-core.js"
+      ],
+      "matches": [
+        "https://flow.google.com/*",
+        "https://labs.google/*"
+      ],
+      "run_at": "document_end",
+      "world": "MAIN"
+    }
+  ],
+  "host_permissions": [
+    "https://flow.google.com/*",
+    "https://labs.google/*"
+  ]
+}

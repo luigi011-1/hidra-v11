@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "motor": {
+    "nome": "HIDRA V11",
+    "repositorio": "https://github.com/luigi011-1/hidra-v11",
+    "branch": "main",
+    "caminho_canonico": "~/Desktop/HIDRA-V11",
+    "remote_local": "origin"
+  },
+  "integracao": {
+    "tipo": "remote_git_e_manifesto_com_commit_pin",
+    "manifesto_consumidor": "integracao/hidra-v11.json",
+    "submodule": false,
+    "copia_duplicada": false
+  },
+  "consumidores": [
+    {
+      "nome": "hidra",
+      "repositorio": "https://github.com/luigi011-1/hidra",
+      "caminho_canonico": "~/Desktop/HIDRA",
+      "papel": "orquestrador_oficial"
+    },
+    {
+      "nome": "luigi-repos",
+      "repositorio": "https://github.com/luigi011-1/luigi-repos",
+      "caminho_canonico": "~/Desktop/luigi-repos",
+      "papel": "central_da_operacao"
+    },
+    {
+      "nome": "postador",
+      "repositorio": "https://github.com/luigi011-1/postador",
+      "caminho_canonico": "~/Postador",
+      "papel": "publicacao_e_consumo_dos_videos"
+    },
+    {
+      "nome": "ecossistema-luigi",
+      "repositorio": "https://github.com/luigi011-1/ecossistema-luigi",
+      "caminho_canonico": "~/ecossistema-luigi",
+      "papel": "manuais_e_backup_do_ecossistema"
+    }
+  ]
+}
